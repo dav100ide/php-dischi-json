@@ -15,7 +15,23 @@
    </head>
    <body>
       <div id="app">
-         <h1>dichi json</h1>
+         <header class="container-lg">
+            <div class="logo">
+               <img
+                  src="https://cantabrialabsdifacooper.it/wp-content/uploads/2021/03/png-clipart-spotify-logo-spotify-computer-icons-podcast-music-apps-miscellaneous-angle.png"
+                  alt="logo"
+                  class="img-fluid"
+               />
+            </div>
+         </header>
+         <main class="container">
+            <div v-for="cd in cds" class="card">
+               <img :src="cd.poster" :alt="cd.title" class="img-fluid" />
+               <h2>{{cd.title}}</h2>
+               <h4>{{cd.author}}</h4>
+               <h2>{{cd.year}}</h2>
+            </div>
+         </main>
       </div>
       <script src="js/main.js"></script>
    </body>

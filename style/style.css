@@ -1,4 +1,13 @@
 /* ============================
+      variables
+============================= */
+:root {
+   --primary-color: #1d2d3c;
+   --primary-color-400: #112030;
+   --primary-color-500: #06131f;
+   --white-color: white;
+}
+/* ============================
       reset
 ============================= */
 * {
@@ -10,3 +19,56 @@
 /* ============================
       commons
 ============================= */
+.container {
+   max-width: 68.75rem;
+   margin: 0 auto;
+}
+
+.container-lg {
+   max-width: 85rem;
+   margin: 0 auto;
+}
+
+body {
+   background-color: var(--primary-color);
+   color: var(--white-color);
+}
+
+/* ============================
+     utilities
+============================= */
+.img-fluid {
+   max-width: 100%;
+   height: auto;
+}
+/* ============================
+     header
+============================= */
+header {
+   background-color: var(--primary-color-500);
+   padding: 1rem 0;
+}
+
+.logo {
+   max-width: 8rem;
+}
+
+/* ============================
+     main
+============================= */
+main {
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   gap: 3.5rem;
+   padding-top: 2rem;
+}
+
+.card {
+   background-color: var(--primary-color-400);
+   text-align: center;
+   padding: 1rem 2rem;
+}
+
+.card > *:not(:last-child) {
+   margin-bottom: 0.8rem;
+}

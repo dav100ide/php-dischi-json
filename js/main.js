@@ -10,7 +10,7 @@ createApp({
       axios
          .get('http://localhost/DICEMBRE/php-dischi-json/api.php') //
          .then((response) => {
-            console.log(response.data);
+            this.cds = response.data;
          });
    },
 }).mount('#app');
