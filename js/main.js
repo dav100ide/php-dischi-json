@@ -10,7 +10,6 @@ createApp({
    },
    methods: {
       changeGenre() {
-         this.filteredCds = [];
          this.filteredCds = this.cds.filter((cd) => cd.genre === this.currentGenre);
          if (this.currentGenre === 'default') {
             this.filteredCds = this.cds;
