@@ -23,8 +23,8 @@
                   class="img-fluid"
                />
             </div>
-            <select name="genre" id="genre-select">
-               <option value="0">scegli un genere</option>
+            <select name="genre" id="genre-select" v-model="currentGenre" @change="changeGenre()">
+               <option value="default">scegli un genere</option>
                <option value="Rock">Rock</option>
                <option value="Pop">Pop</option>
                <option value="Jazz">Jazz</option>
@@ -32,11 +32,12 @@
             </select>
          </header>
          <main class="container">
-            <div v-for="cd in cds" class="card">
+            <div v-for="cd in filteredCds" class="card">
                <img :src="cd.poster" :alt="cd.title" class="img-fluid" />
                <h2>{{cd.title}}</h2>
                <h4>{{cd.author}}</h4>
                <h2>{{cd.year}}</h2>
+               <small>{{cd.genre}}</small>
             </div>
          </main>
       </div>
