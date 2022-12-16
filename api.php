@@ -9,7 +9,7 @@ $cds[] = [
    'author' =>  'cyber punk',
    'year' =>  2099,
    'poster' =>  'https://picsum.photos/200/300',
-   'genre' =>  'pop',
+   'genre' =>  'Pop',
 ];
 
 header('Content-Type: application/json');

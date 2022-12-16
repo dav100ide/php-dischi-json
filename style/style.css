@@ -47,10 +47,21 @@ body {
 header {
    background-color: var(--primary-color-500);
    padding: 1rem 0;
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
 }
 
 .logo {
    max-width: 8rem;
+}
+
+#genre-select {
+   background-color: var(--primary-color);
+   color: var(--white-color);
+   padding: 1rem;
+   border-radius: 1000vmax;
+   font-size: 1.3rem;
 }
 
 /* ============================
