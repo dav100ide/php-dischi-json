@@ -24,11 +24,6 @@
    margin: 0 auto;
 }
 
-.container-lg {
-   max-width: 85rem;
-   margin: 0 auto;
-}
-
 body {
    background-color: var(--primary-color);
    color: var(--white-color);
